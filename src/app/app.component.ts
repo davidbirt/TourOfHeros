@@ -1,9 +1,5 @@
 import { Component } from '@angular/core';
-
-export class Hero {
-  id: number;
-  name : string;
-}
+import { Hero } from './model/hero';
 
 let holder : number = 1;
 let templateString : string = `Dave es totally rocking : ${holder}`;
@@ -19,7 +15,7 @@ const HEROES : Hero[] = [
 {id: 18, name:'Mr. Dave'}]
 
 @Component({
-  selector: 'db',
+  selector: 'db-hero-list',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
