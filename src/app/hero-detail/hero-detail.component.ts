@@ -24,5 +24,8 @@ export class HeroDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location
   ){}
- @Input() hero :Hero;
+  @Input() hero :Hero;
+  goBack(): void {
+    this.location.back();
+  }
 }

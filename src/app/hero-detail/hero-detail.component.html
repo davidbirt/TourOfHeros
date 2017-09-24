@@ -1,6 +1,15 @@
-<div class="hero-details" *ngIf="hero">
-  <h3>{{hero.name}} details!</h3>
-  <div><label>ID : {{hero.id}}</label></div>
-  <div><label>NAME : {{hero.name | uppercase}}</label></div><br>
-  <label>Edit : </label><input [(ngModel)]="hero.name" placeholder="name">
-</div>
+<form *ngIf="hero" class="col-5">
+  <div class="form-group hero-details">
+    <label>NAME : {{hero.name | uppercase}}</label>
+  </div>
+  <div class="form-group">
+    <label>Edit : </label><input [(ngModel)]="hero.name" placeholder="name" name="hero-name"><br>
+  </div>
+  <div class="form-group">
+    <label>Hero Description</label>
+    <textarea class="form-control" rows="3" [(ngModel)]="hero.description" name="description"></textarea>
+  </div>
+</form>
+
+  <!-- <div><label>ID : {{hero.id}}</label></div> -->
+<button (click)="goBack()" class="btn btn-primary">Back</button>
