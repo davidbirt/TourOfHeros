@@ -13,7 +13,7 @@ import { HeroService } from './services/hero.service';
 
 export class AppComponent {
   constructor(private heroService: HeroService){
-    this.heroes = this.heroService.getHeros();
+    this.heroService.getHeros().then(value => this.heroes = value);
   }
   title = 'Daves List of HEROES!!!';
   hero : Hero = {
