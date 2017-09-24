@@ -6,7 +6,6 @@ import { AppComponent } from '../app.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 
 export const appRoutes: Routes = [
-    { path: '', component : AppComponent },
     { path: 'hero/:id',      component: HeroDetailComponent },
     {
       path: 'heroes',
@@ -17,9 +16,9 @@ export const appRoutes: Routes = [
         path: 'dashboard',
         component: DashboardComponent
     },
-    // { path: '',
-    //   redirectTo: '/dashboard',
-    //   pathMatch: 'full'
-    // },
+    { path: '',
+      redirectTo: '/dashboard',
+      pathMatch: 'full'
+    },
     { path: '**', component: Response404Component }
   ];
