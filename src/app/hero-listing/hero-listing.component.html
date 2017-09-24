@@ -4,10 +4,10 @@
 
 </div>
 <h2>Look at all these fucking heroes man: </h2>
-<ul class="heroes list-group">
+<ul class="heroes list-group col-4">
   <li *ngFor="let hero of heroes" (click)="selectHero(hero)" [class.active]="hero === selectedHero" class="list-group-item">
     <span class="badge">{{hero.id}}</span> {{hero.name}}
   </li>
 </ul>
 
-<hero-detail [hero]="selectedHero"></hero-detail>
+<!-- <hero-detail [hero]="selectedHero"></hero-detail> -->

@@ -1,4 +1,4 @@
-<div class="hero-details" >
+<div class="hero-details" *ngIf="hero">
   <h3>{{hero.name}} details!</h3>
   <div><label>ID : {{hero.id}}</label></div>
   <div><label>NAME : {{hero.name | uppercase}}</label></div><br>
