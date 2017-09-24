@@ -7,4 +7,10 @@ export class HeroService {
   getHeros() : Promise<Hero[]> {
     return Promise.resolve(HEROS);
   }
+  getHero(id: number): Promise<Hero> {
+    //Get a hero from the collection with this Id
+    var hero = HEROS.find(hr => hr.id === id);
+    return Promise.resolve(hero);
+  }
+
 }

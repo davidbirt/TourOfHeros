@@ -1,1 +1,9 @@
-<h2>I Think this is where all  the top heros will go</h2>
+<h2>Daves top heros!!</h2>
+<div class="card" style="width: 15rem; display:inline-block;margin:10px;" *ngFor="let hero of heros" >
+        <img class="card-img-top" src="https://unsplash.it/{{hero.id+200}}" alt="Card image cap" >
+        <div class="card-body">
+          <h4 class="card-title">{{hero.name}}</h4>
+          <p class="card-text">{{hero.description}}</p>
+          <a href="#" class="btn btn-primary">Details</a>
+        </div>
+      </div>

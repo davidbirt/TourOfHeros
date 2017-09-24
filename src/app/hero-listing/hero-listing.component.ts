@@ -14,10 +14,6 @@ export class HeroListingComponent {
     this.heroService.getHeros().then(value => this.heroes = value);
   }
   title = 'Daves List of HEROES!!!';
-  hero : Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
   ngOnChanges(){console.log('changes called')};
   ngOnInit(){console.log('init init init')};
   heroes : Hero[];
