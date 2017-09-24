@@ -1,12 +1,14 @@
-<form *ngIf="hero" class="col-5">
+<form *ngIf="hero" class="col-5 hero-detail">
   <div class="form-group hero-details">
-    <label>NAME : {{hero.name | uppercase}}</label>
+    <label>NAME:</label>
+    <span>{{hero.name | uppercase}}</span>
   </div>
   <div class="form-group">
-    <label>Edit : </label><input [(ngModel)]="hero.name" placeholder="name" name="hero-name"><br>
+    <label>Edit:</label>
+    <input [(ngModel)]="hero.name" placeholder="name" name="hero-name"><br>
   </div>
   <div class="form-group">
-    <label>Hero Description</label>
+    <label>Hero Description:</label>
     <textarea class="form-control" rows="3" [(ngModel)]="hero.description" name="description"></textarea>
   </div>
 </form>
