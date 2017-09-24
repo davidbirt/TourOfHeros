@@ -1,6 +1,6 @@
 <div class="hero-details" *ngIf="hero">
   <h3>{{hero.name}} details!</h3>
   <div><label>ID : {{hero.id}}</label></div>
-  <div><label>NAME : {{hero.name}}</label></div><br>
+  <div><label>NAME : {{hero.name | uppercase}}</label></div><br>
   <label>Edit : </label><input [(ngModel)]="hero.name" placeholder="name">
 </div>
