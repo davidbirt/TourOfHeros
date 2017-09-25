@@ -3,3 +3,18 @@
 body{
     background-color:#55b !important;
 }
+@font-face {
+    font-family: "Kimberley";
+    src: url(https://trutil.med-enroll.com/avengers-font/hero.ttf) format("truetype");
+  }
+  h2 { font-family: "Kimberley", sans-serif }    
+
+  .nav{
+    background-color: #18c020;
+    border-bottom: 3px solid black;
+}
+
+.nav-link{
+    color: #fff;
+    font-size: 17px
+}
